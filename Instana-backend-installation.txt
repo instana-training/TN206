@@ -18,6 +18,13 @@ EOF
 yum clean expire-cache -y
 yum update -y
 
+## Create required directories
+
+mkdir -p /mnt/instana/stanctl/analytics
+mkdir -p /mnt/instana/stanctl/metrics
+mkdir -p /mnt/instana/stanctl/data
+mkdir -p /mnt/instana/stanctl/objects
+
 
 ## Check firewall and open required ports
 
